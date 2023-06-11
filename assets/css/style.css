@@ -20,6 +20,10 @@ padding: 0;
 
 }
 
+/* .inline-block {
+    display: inline-block;
+}   */
+
 
 /* --------------------------------- Topnav Navbar Header Footer Button and Colors */
 
@@ -51,19 +55,19 @@ padding: 0;
 
 .navbar-bg-color {
     background-color: #EDE6DE;
-} 
+}
 
 .bg-navbar-frame {
     border-style: solid;
     border-width: 33px;
-    border-color: #D9C8B7; 
+    border-color: #D9C8B7;
 }
 
 #bg-navbar-innerframe {
 
     border-style: solid;
     border-width: 20px;
-    border-color: #4A3729; 
+    border-color: #4A3729;
 }
 
 .main-logo {
@@ -72,7 +76,7 @@ padding: 0;
     background-repeat: no-repeat center center;
     height: 350px;
     width: 350px;
-} 
+}
 
 .navbar-brand {
     display: flex;
@@ -116,30 +120,40 @@ padding: 0;
     color: #4A3729;
     display: flex;
     justify-content: center;
-} 
+}
+
+
+/* .navbar-collapse {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: cover;
+
+}  */
 
 /* ------------------ Footer */
 
 .bg-color-footer {
-    background-color: #EDE6DE;  
-} 
+    background-color: #EDE6DE;
+}
 
 .footer-frame {
     border-style: solid;
     border-width: 33px;
-    border-color: #D9C8B7;   
-} 
+    border-color: #D9C8B7;
+}
 
 #bg-footer-outerframe {
     border-style: solid;
     border-width: 35px;
-    border-color: #fefefe;     
+    border-color: #fefefe;
 }
 
 #bg-footer-innerframe {
     border-style: solid;
     border-width: 20px;
-    border-color: #4A3729; 
+    border-color: #4A3729;
 }
 
 #address, #email, #contact {
@@ -157,7 +171,7 @@ padding: 0;
     font-size: 16px;
     padding-top: 2px;
     padding-bottom: 3px;
-    margin-top: 8px;   
+    margin-top: 8px;
 }
 
 .footer-heading {
@@ -169,8 +183,8 @@ padding: 0;
         padding-bottom: 5px;
         justify-content: center;
         align-items: center;
-        margin-left: 52px;      
-}   
+        margin-left: 52px;
+}
 
 .footer-logo {
     background: url("../images/footerlogo.png");
@@ -180,7 +194,7 @@ padding: 0;
     width: 250px;
     margin-top: 8px;
     margin-left: 55px;
-} 
+}
 
 .footer-section-name {
     font-family: Merriweather, sans-serif;
@@ -188,8 +202,8 @@ padding: 0;
     font-style: italic;
     font-weight: 500;
     text-align: center;
-    color: #4A3729;  
-    margin-top: 5px;  
+    color: #4A3729;
+    margin-top: 5px;
 }
 
 .footer-p {
@@ -206,22 +220,22 @@ padding: 0;
     font-size: 24px;
     font-weight: 600;
     font-style: italic;
-    color: #4A3729;  
+    color: #4A3729;
     padding-bottom: 5px;
 }
 
 .footer-bottom-heading {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;  
+    flex-direction: column;
 }
- 
+
 .footer-bottom {
     font-family: Merriweather, sans-serif;
     font-size: 16px;
     font-weight: 700;
     font-style: bold;
-    color: #4A3729;   
+    color: #4A3729;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -231,16 +245,33 @@ padding: 0;
   text-align: center;
   margin-right: 50px;
   line-height: .70rem;
-} 
+}
 
-#quick-links, 
-#download-link,  
-#clinico, 
-#social {
+#quick-links,
+#download-link,
+#clinico {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #4A3729;   
+    color: #4A3729; 
+}
+
+#social {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    padding-right: 60px;
+    color: #4A3729; 
+}
+
+.foot-item-link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
 .foot-item-link p {
@@ -250,7 +281,7 @@ padding: 0;
     font-weight: 600;
     color: #4A3729;
     width: 100%;
-    line-height: .75rem;        
+    line-height: .75rem;
 }
 
 .inline-block {
@@ -258,10 +289,10 @@ padding: 0;
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
-    color: #4A3729; 
+    color: #4A3729;
     width: 100%;
-    line-height: 1.5rem;          
-}    
+    line-height: 1.5rem;
+}
 
 .inline-block-book {
     font-family: Merriweather, sans-serif;
@@ -269,15 +300,48 @@ padding: 0;
     font-style: italic;
     font-weight: 600;
     color: #4A3729;
-    width: 100%;        
+    width: 100%;
 }
 
 .list-inline {
     list-style-type: none;
 }
 
-.download i 
-.calendar i,
+.foot-item-link p {
+    font-size: 14px;
+    text-align: center;
+    color: #4A3729;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    /* transition: all 0.3s ease; */
+}
+
+.foot-item-link p:hover {
+    background-color: #4A3729;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-left: 20px;
+    color: #fefefe;
+    height: 18px;
+}
+
+.foot-item-link ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.download i
+.calendar i {
+    font-size: 18px;
+    color: #4A3729;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
 .social-links i {
     font-size: 18px;
     color: #4A3729;
@@ -289,13 +353,21 @@ padding: 0;
     -o-transition: all 0.35s ease-in-out;
 }
 
-.download i:hover {
-    color: #4A3729;
-    background: #D9C8B7;  
-}  
 
 .download i,
-.calendar i,
+.calendar i {
+    width: 28px;
+    height: 28px;
+    padding: 5px 0;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 1rem;
+    text-align: center;
+    align-content: space-between;
+    color: #fefefe;
+    background: #4A3729;
+}
+
 .social-links li a i {
     width: 28px;
     height: 28px;
@@ -304,24 +376,58 @@ padding: 0;
     font-size: 15px;
     line-height: 1rem;
     text-align: center;
-    align-content: space-between;   
-    color: #fefefe; 
+    align-content: space-between;
+    color: #fefefe;
     background: #4A3729;
-} 
- 
-.download li a i,
-.calendar li a i,
+}
+
+.download i:hover {
+    color: #4A3729;
+    background: #D9C8B7;
+}
+
+.calendar i:hover {
+    color: #4A3729;
+    background: #D9C8B7;
+}
+
 .social-links li a i:hover {
     color: #4A3729;
     background: #D9C8B7;
-}  
+}
+
+
+/*-------------------------------- Responsive Footer Section */
+
+
+@media(max-width: 767px){
+    .foot-item-link {
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media(max-width: 574px){
+    .foot-item-link {
+        width: 100%;
+
+    }
+}
+
+
+
+
+
+
+
 
 /* .forms-pdf a i */
-/* .download i, 
+/* .download i,
 .forms-pdf a i,  */
 
 /* ------------------ Button */
- 
+
 .button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
@@ -329,12 +435,23 @@ padding: 0;
     color: #fff;
     background-color: #4A3729;
     border: none;
-}   
+}
 
 /* --------------------------------- <Name Details Title Heading */
 
+.header {
+    margin: 0;
+}
+
+.heading {
+    padding-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+
 .bg-color-name-title {
-    background-color:#F4ECE6;  
+    background-color:#F4ECE6;
 }
 
 .name {
@@ -343,8 +460,8 @@ padding: 0;
     font-size: 40px;
     margin-top: 25px;
     text-align: center;
-    color: #4A3729; 
-    padding-top: 25px;  
+    color: #4A3729;
+    padding-top: 25px;
 }
 
 .details {
@@ -363,21 +480,9 @@ padding: 0;
     text-align: center;
 }
 
-.header {
-    margin: 0; 
-}
-
-.heading {
-    padding-top: 20px;
-    text-align: center;
-    font-style: italic;
-}
-
-
-/* .list-inline-item:not(:last-child) {
+.list-inline-item:not(:last-child) {
     margin-bottom: 2px;
-
-} */
+}
 
 /* ---------------------------------About Dr Janique Section */
 
@@ -394,9 +499,9 @@ padding: 0;
     border-width: 33px;
     border-color: #D9C8B7;
 }
-  
+
 #about {
-    background-color: #fefefe; 
+    background-color: #fefefe;
 }
 
 #bg-about-outline {
@@ -406,7 +511,7 @@ padding: 0;
 }
 
 #about-dr-janique {
-    height: 700px;   
+    height: 700px;
 }
 
 #about-dr-janique h2 {
@@ -414,8 +519,8 @@ padding: 0;
     text-align: center;
     font-family: "Lato sans-serif";
     font-size: 280%;
-    color:#4A3729; 
-} 
+    color:#4A3729;
+}
 
 .left-about-heading  {
     text-align: left;
@@ -425,7 +530,6 @@ padding: 0;
     padding-top: 30px;
     padding-left: 10px;
     margin-left: 25px;
-    margin-right: px;
     width: 30%;
     clear: both;
 }
@@ -438,22 +542,22 @@ padding: 0;
     border-style: solid;
     border-color: #4A3729;
     border-width: 5px;
-    border-radius: 35%; 
+    border-radius: 35%;
     margin-left: auto;
     margin-right: 5px;
     background-color: #EDE6DE;
 }
 
 #circle-container {
-    border-color: #4A3729; 
-} 
+    border-color: #4A3729;
+}
 
 #circle-cover-bg {
     background: url("../images/janique.jpg") no-repeat center center;
     height: 100%;
     width: 100%;
-    border-radius: 35%; 
-}   
+    border-radius: 35%;
+}
 
 .right-about {
     text-align: left;
@@ -480,6 +584,7 @@ padding: 0;
 .bg-color-header {
     /* background-color: #FCE9DF;  */
     /* background-color: #24522E;  */
+
 }
 
 /* .ui-menu-color-form {
@@ -487,7 +592,7 @@ padding: 0;
 } */
 
 /* .ui-menu-color-button {
-    background-color:#854A14; 
+    background-color:#854A14;
     background-color: greenyellow;
 }   */
 
@@ -497,8 +602,8 @@ padding: 0;
 
 
 .bg-color-name-title-frame {
-    background-color: #D9C8B7; 
-    /* background-color: red; */
+    /* background-color: #D9C8B7;  */
+    background-color: red;
 }
 
 
@@ -517,7 +622,7 @@ padding: 0;
  .bg-color-appoint {
     /* background-color: #f3ECE4; */
     background-color: darkseagreen;
- } 
+ }
 
  /*-------------------------------- Why Choose Section */
 /*
@@ -532,13 +637,13 @@ padding: 0;
 
 
 
-.menuitem a {
+/* .menuitem a {
     width: 100%;
     text-decoration: none;
     color: #854A14;
     height: 120px;
     color: red;
-}
+} */
 
 
 
