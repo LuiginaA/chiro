@@ -566,18 +566,84 @@ padding: 0;
     line-height: 30px;
     padding-top: 30px;
     padding-right: 10px;
-    margin-left:px;
     margin-right: 18px;
     width: 30%;
     clear: both;
 }
 
 
+/* ---------------------------------Appointment info Section */
 
+.bg-color-appointment-info {
+    background-color:#F4ECE6;
+}
 
+.container-appoint  {
+    margin: 0;
+    padding: 0;
+} 
 
+.container-fluid-appoint {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.booking-info  {
+    font-family: Merriweather, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #4A3729; 
+    padding-top: 12px; 
+}
 
+.booking-appoint h6 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 600; 
+    font-size: 24px;
+    font-style: italic;
+    word-spacing: 2.5px;
+    text-align: center;
+    color: #4A3729; 
+    padding-top: 25px;
+    margin-bottom: 10px;  
+}
+
+.info-app {
+    font-family: Merriweather, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    color: #4A3729;
+    padding-top: 10px;
+    margin: 15px; 
+}
+
+.booking-info h6 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    color: #4A3729; 
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.appointment-heading {
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+  
+}
 
 /* --------------------------------- Header and Colors */
 
