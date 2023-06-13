@@ -17,15 +17,15 @@ h5,
 h6 {
 margin: 0;
 padding: 0;
-
+box-sizing: border-box;
 }
 
 /* .inline-block {
     display: inline-block;
 }   */
 
-
 /* --------------------------------- Topnav Navbar Header Footer Button and Colors */
+
 
 /* ------------------ Topnav */
 
@@ -122,15 +122,14 @@ padding: 0;
     justify-content: center;
 }
 
+.navbar-toggler {
+    color: #4A3729;
+    font-size: 12px;
+    font-style: bold;
+    font-weight: 700;
+    font-family: Merriweather, sans-serif;
 
-/* .navbar-collapse {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: flex-start;
-    background-size: cover;
-
-}  */
+} 
 
 /* ------------------ Footer */
 
@@ -353,7 +352,6 @@ padding: 0;
     -o-transition: all 0.35s ease-in-out;
 }
 
-
 .download i,
 .calendar i {
     width: 28px;
@@ -399,11 +397,30 @@ padding: 0;
 
 /*-------------------------------- Responsive Footer Section */
 
+/*--------------------------------  General Media Section - Queries Syntax */
 
-@media(max-width: 767px){
+
+
+@media screen and (mix-width: 481px) {
+ {
+   
+
+    }
+
+
+}
+
+@media screen and (mix-width: 481px) {
     .foot-item-link {
         width: 50%;
         margin-bottom: 30px;
+
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .foot-item-link {
+        width: 100%;
 
     }
 }
@@ -416,8 +433,20 @@ padding: 0;
 }
 
 
+@media screen and (mix-width: 481px) {
+    .foot-item-link {
+        width: 50%;
+        margin-bottom: 30px;
 
+    }
+}
+@media screen and (mix-width: 481px) {
+    .foot-item-link {
+        width: 50%;
+        margin-bottom: 30px;
 
+    }
+}
 
 
 
@@ -451,7 +480,7 @@ padding: 0;
 
 
 .bg-color-name-title {
-    background-color:#F4ECE6;
+    background-color: #EDE6DE;
 }
 
 .name {
@@ -575,7 +604,7 @@ padding: 0;
 /* ---------------------------------Appointment info Section */
 
 .bg-color-appointment-info {
-    background-color:#F4ECE6;
+    background-color: #EDE6DE; 
 }
 
 .container-appoint  {
@@ -629,9 +658,9 @@ padding: 0;
     font-size: 18px;
     text-align: left;
     color: #4A3729; 
-    padding-top: 15px;
+    /* padding-top: 5px; */
+    padding-bottom: 2px;
     margin-left: 20px;
-    margin-top: 25px;
 }
 
 .appointment-heading {
@@ -639,10 +668,9 @@ padding: 0;
     font-style: italic;
     font-weight: 600;
     color: #000;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 0;
-  
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-top: 0; 
 }
 
 /* --------------------------------- Header and Colors */
@@ -712,5 +740,16 @@ padding: 0;
 } */
 
 
+/* .button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #DBD4CC;
+    border-color: #4A3729;
+    background-color: rgba(98, 68, 4, 0.906);
+
+}  */
+
+
+     
 
 
