@@ -6,30 +6,15 @@
 
 /* font-family: 'Lato', sans-serif; */
 
-
 /* ---------------------------------Special paddings/margins/text */
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} */
-
-
-* {
-    margin: 0;
+{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    
-    } 
+}
 
 /* --------------------------------- Topnav Navbar Header Footer Button and Colors */
-
 
 /* ------------------ Topnav */
 
@@ -129,17 +114,17 @@ box-sizing: border-box;
     font-style: bold;
     font-weight: 700;
     font-family: Merriweather, sans-serif;
-} 
+}
 
 h1.title {
-    font-family: Merriweather, sans-serif; 
+    font-family: Merriweather, sans-serif;
     font-weight: 600;
     color: #4A3729;
     text-align: center;
 }
 
 h2.name {
-    font-family: Merriweather, sans-serif; 
+    font-family: Merriweather, sans-serif;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -172,7 +157,7 @@ div.logo {
 }
 
 .bg-color-name-title {
-    background-color: #EDE6DE; 
+    background-color: #EDE6DE;
 }
 
 .details {
@@ -184,8 +169,6 @@ div.logo {
 .list-inline-item:not(:last-child) {
     margin-bottom: 2px;
 }
-
-
 
 /* ------------------ Footer */
 
@@ -308,7 +291,7 @@ div.logo {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #4A3729; 
+    color: #4A3729;
 }
 
 #social {
@@ -316,7 +299,7 @@ div.logo {
     line-height: 20px;
     text-align: right;
     padding-right: 60px;
-    color: #4A3729; 
+    color: #4A3729;
 }
 
 .foot-item-link a::before {
@@ -450,102 +433,6 @@ div.logo {
     background: #D9C8B7;
 }
 
-
-/*-------------------------------- Responsive Footer Section */
-
-/*--------------------------------  General Media Section - Queries Syntax */
-
-/* 
-
-@media screen and (mix-width: 481px) {
- {
-   
-
-    }
-
-
-}
-
-@media screen and (mix-width: 481px) {
-    .foot-item-link {
-        width: 50%;
-        margin-bottom: 30px;
-
-    }
-}
-
-@media screen and (orientation: landscape) {
-    .foot-item-link {
-        width: 100%;
-
-    }
-}
-
-@media(max-width: 574px){
-    .foot-item-link {
-        width: 100%;
-
-    }
-}
-
-
-@media screen and (mix-width: 481px) {
-    .foot-item-link {
-        width: 50%;
-        margin-bottom: 30px;
-
-    }
-}
-@media screen and (mix-width: 481px) {
-    .foot-item-link {
-        width: 50%;
-        margin-bottom: 30px;
-
-    }
-} */
-
-
-
-
-/* .forms-pdf a i */
-/* .download i,
-.forms-pdf a i,  */
-
-/* ------------------ Button */
-
-.button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    color: #fff;
-    background-color: #4A3729;
-    border: none;
-}
-
-
-
-/* .name {
-    font-family: Merriweather, sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    margin-top: 25px;
-    text-align: center;
-    color: #4A3729;
-    padding-top: 25px;
-}  */
-
-
-/* .title {
-    font-family: Merriweather, sans-serif;;
-    font-weight: 600;
-    font-size: 65px;
-    margin-top: 40px;
-    margin-bottom: 70px;
-    color: #4A3729;
-    text-align: center;
-}  */
-
-
 /* ---------------------------------About Dr Janique Section */
 
 .container-flex-about {
@@ -554,7 +441,7 @@ div.logo {
 
 .container-flex-about > * {
     flex-basis: 100%;
-} 
+}
 
 .bg-about-frame {
     border-style: solid;
@@ -566,7 +453,6 @@ div.logo {
     border-style: solid;
     border-color: #4A3729;
     border-width: 15px;
-
 }
 
 #about-dr-janique {
@@ -609,148 +495,181 @@ div.logo {
     border-radius: 35%;
 }
 
-/* ---------------------------------Media Queries for About Section */
-/* 
-}@media screen and (max-width: 1393px) {
-    #about-dr-janique {
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
+/* ---------------------------------Chiropractics Section */
 
-    }
-
-
-#intro {
-    padding: 30px 0;
-    margin-top: 0;
-
+.cards-treat {
+    background-color: #151320;
+    background-color: #4A3729;
+    display: grid;
+    place-items: center center; 
 }
 
-#left-about, #right-about {
+.treatment-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    padding-top: 20px;
+    padding-bottom: 40px;
+    grid-gap: 20px;  
+}
+
+.treat-card {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.container-treat {
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%); 
+}
+
+.img {
     width: 100%;
-    float: left;
-    padding: 0;
-
-}
-
-.left-about-heading,
-.right-about-heading h2 {
-    width: inherit;
-
-}
-
-.left-about-heading, .right-about-heading p {
+    display: block;
+    border-radius: 20px 20px 0 0; 
+}  
+   
+.container-treat::after {
+    content: '';
+    height: 100%;
     width: 100%;
-    float: left;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;  
+    opacity: 0.7;
+} 
 
+.treatment-card-1>.container-treat::after {
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
+} 
+
+.treatment-card-2>.container-treat::after {
+    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
+} 
+
+.treatment-card-3>.container-treat::after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
 }
 
-#centre-about {
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0;
+.treatment-card-4>.container-treat::after {
+    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
+} 
 
+.treatment-card-5>.container-treat::after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
+}  
+
+.treatment-card-6>.container-treat::after {
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
+} 
+
+.treatment-card-7>.container-treat::after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
+} 
+ 
+.treatment-card-8>.container-treat::after {
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
+} 
+
+.treatment-card-9>.container-treat::after {
+    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
+} 
+
+.button5  {
+    background-color: #1c1b29; 
+    border: none;
 }
 
-#circle-container {
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0;
-
+.button5 a {
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    margin: 4px 2px; 
+    cursor: pointer;
 }
 
-#circle-container-bg {
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0;
+.details {
+    padding: 20px 10px;
+    margin: 10px 0 25px 0;
+}     
 
-}
-
-}  */
-
-
+.details h3 {
+    color: #fefefe;
+    font-family: 'Merriweather', serif; 
+    font-weight: 600;
+    font-size: 27px;
+    font-style: italic;
+}  
 
 /* ---------------------------------House Rules Section */
- 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    }  
 
 .container-house-rules {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
+    align-items: center;  
     min-height: 100vh;
-    /* background-color: #4A3729; */
+    background-size: 100%; 
     background-color: #D9C8B7;
-}
+    background-color: blueviolet;
+} 
 
-
-.container-rules {
+.container-house-rules{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    padding: 20px;
-}
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;     
+} 
 
 .card {
     position: relative;
     width: 320px;
     height: 450px;
-    margin: 0px;
-    background-color: #EADACB;
+    margin: 0px; 
+    background-color: #EADACB; 
     border-radius: 20px;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
-    box-shadow: 0 15px 0 #fff;  
-    inset: 0 -15px 0 rgba(255,255,255,0.25), 0 45px 0 rgba(0,0,0,0.15);   
+    box-shadow: 0 15px 0 #fff,
+    inset 0 -15px 0 rgba(255,255,255,0.25), 0 45px 0 rgba(0,0,0,0.15); 
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
-    align-items: center;  
+    align-items: center;
 }
 
 .card::before {
     content: '';
     position: absolute;
     top: -140px;
-    left: -40%;
+    left: -40%; 
     width: 100%;
     height: 120%;
-    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.5)); 
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.5));
     transform: rotate(35deg);
     pointer-events: none;
-    filter: blur(5px);
- 
+    filter: blur(10px);
 }
 
 .card:nth-child(1) {
     background: linear-gradient(to bottom #EADACB, #9A897A, #DDCDBE, #655244, #4A3729);
-}
+} 
 
 .rule-icon {
     position: relative;
     width: 140px;
     height: 120px;
     background-color: #4A3729;
+    background-color: #D9C8B7;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-
-    box-shadow: 0 10px 0 rgba(0,0,0,0.1),   
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
     inset 0 -8px 0 #fff;
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .rule-icon::before {
@@ -762,7 +681,7 @@ div.logo {
     height: 50px;
     background: transparent;
     border-top-right-radius: 50px;
-    box-shadow: 15px -15px 0 15px #4A3729;
+    box-shadow: 15px -15px 0 15px #D9C8B7;
 }
 
 .rule-icon::after {
@@ -775,9 +694,12 @@ div.logo {
     background: transparent;
     border-top-left-radius: 50px;
     box-shadow: -15px -15px 0 15px #4A3729;
+    box-shadow: -15px -15px 0 15px #D9C8B7;
 }
+
 .rule-icon ion-icon {
     color: #fff;
+    color: #4A3729;
     position: relative;
     font-size: 4em;
     z-index: 10000;
@@ -790,30 +712,26 @@ div.logo {
     padding: 30px;
     padding-top: 150px;
     text-align: center;
-
 }
 
 .content-rule h3 {
     color: #4A3729;
     margin-bottom: 10px;
 }
+
 .content-rule p {
     color: #4A3729;
     line-height: 1.5em;
 }
 
-
 /* ---------------------------------Appointment info Section */
-
-.bg-color-appointment-info {
-    background-color: #EDE6DE; 
-} 
 
 .container-appoint {
     margin: 0px;
     padding: 0px;
-    
-}   
+    width: 100%;
+    background-size: cover;
+}
 
 .appointment-heading {
     text-align: center;
@@ -825,7 +743,7 @@ div.logo {
     letter-spacing: 2px;
     color: #000;
     padding-top: 10px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -833,12 +751,12 @@ div.logo {
 .container-appoint-1 {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     align-content: center;
     line-height: 2rem;
     width: 100%;
     padding-left: 0;
-} 
+}
 
 .container-appoint-1 h4 {
     font-family: Merriweather, sans-serif;;
@@ -850,7 +768,7 @@ div.logo {
     margin-top: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%; 
+    width: 100%;
 }
 
 .container-appoint-1 {
@@ -859,564 +777,7 @@ div.logo {
     font-weight: 600;
     font-style: italic;
     color: #4A3729;
-    text-align: center;  
+    text-align: center;
     line-height: 1.75rem;
-}  
-
-
-
-
-/* .appoint-2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;   
-} 
-
-.appoint-2 {
-    background: url("../images/medi.jpg")no-repeat center;
-    background-size: cover;
-    height: 400px;
-    width: 480px; 
 }
-
-.appoint-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    width: 100%; 
-}   
-
-.dropdown {
-    margin: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px; 
-    justify-content: space-evenly;
-    gap: 25px;
-    align-items: center;   
-} 
-
-.button {
-    background-color: #4A3729; 
-    border: none;
-    color: #EDE6DE;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button1 {
-    background-color: #EDE6DE; 
-    color: black; 
-    border: 2px solid #4A3729;
-  }
-  
-  .button1:hover {
-    background-color: #4A3729;
-    color: #EDE6DE;
-  }
-  
-  .button2 {
-    background-color: #EDE6DE; 
-    color: black; 
-    border: 2px solid #4A3729;
-  }
-  
-  .button2:hover {
-    background-color: #4A3729;
-    color: #EDE6DE;
-  }
-  
-  .button3 {
-    background-color: #EDE6DE; 
-    color: black; 
-    border: 2px solid #4A3729;
-  }
-  
-  .button3:hover {
-    background-color: #4A3729;
-    color: #EDE6DE;
-  }
-  
-  .button4 {
-    background-color: #EDE6DE;
-    color: black;
-    border: 2px solid #4A3729;
-  }
-
-  .button4:hover {
-    background-color: #4A3729;
-    color: #EDE6DE;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    color: #4A3729 ;
-    font-family: Merriweather, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-  }
- 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #EDE6DE;
-    min-width: 350px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
----------------------------------- */
-
-/*-------------------------------- Why Choose Section */
-
-
-.container-bg{
-    background-color: #000000;
- }
-
- .container-bg-2 {
-    background-color: #ffffff;
- }
-
- .bg-color-why {
-    background-color: #E9D5CA;
-
-}
-
-.container-bg {
-padding: 3%;
-margin-bottom: 5%;
-}
-
-.container-bg-2 {
-    padding: 2%;
-}
-
-.container-why {
-    padding-top: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 5%;
-}
-
-.card {
-    margin:3%;
-    background-color: #E9D5CA;
-
-}
-
-.card {
-    border-style: hidden;
-}
-.text-bg-card-one {
-    background-color: #4A3729;
-
-
-}
-
-.rounded-pill {
-    align-content: center;
-
-}
-
-.rounded-pill-one {
-    color: #DBD4CC;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-two {
-    background-color: #CCB0A2;
-
-}
-
-.rounded-pill-two {
-    color:#854A14;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-three {
-    background-color: #BFBCB5;
-
-}
-
-.rounded-pill-three {
-    color: #46433A;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-four {
-    background-color: #404040;
-
-}
-
-.rounded-pill-four {
-    color: #DBD4CC;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-five {
-    background-color: #46433A;
-
-}
-
-.rounded-pill-five {
-    color: #EADACB;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-six {
-    background-color:#7F5443;
-
-}
-
-.rounded-pill-six {
-    color: #f3ECE4;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-seven {
-    background-color: #f3ECE4;
-}
-
-.rounded-pill-seven {
-    color: #7F5443;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-card-eight {
-    background-color: #FCE6D6;
-
-}
-
-.rounded-pill-eight {
-    color: #854A14;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-.text-bg-card-nine {
-    background-color:#544133;
-
-}
-
-.rounded-pill-nine {
-    color: #FCE9DF;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: center;
-
-}
-
-.text-bg-card-ten {
-    background-color:#BFBCB5;
-
-}
-
-.rounded-pill-ten {
-    color: #4A3729;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-}
-
-.text-bg-color {
-    background-color:#46433A;
-
-}
-
-
- .container-why h4 {
-    word-spacing: 10px;
-    letter-spacing: 3px;
-    color: #211914;
-    font-family: merriweather, sans-serif;
-    font-size: 28px;
-    padding-top: 5px;
-
- }
-
-
- .container-why h5 {
-    color: #211914;
-    font-family: lato, sans-serif;
-    font-size: 26px;
-    letter-spacing: 2px;
-    padding-bottom: 5px;
- }
-
-
- .container-why h6 {
-    color:#211914;
-    font-family: lato, sans-serif;
-    font-size: 22px;
-    letter-spacing: 3px;
- }
-
-
-
- .rounded-pill-1 span {
-    color: #E9D5CA;
-    font-family: lato, sans-serif;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 1px;
-
- }
- .quote {
-    background-color: #f3ECE4;
- }
-
- .quote {
-    color: #7F5443;
-    text-align: center;
-    font-family: lato, sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: 1px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-
- }
-
- .quote p{
-    color: #754E3E;
-    text-align: right;
-    font-family: lato, sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: px;
-    padding-right: 5%;
-    padding-bottom: 0%;
-
- }
-
-/*-------------------------------- Gallery Why Section */
-
-.container-whygallery-bg {
-    background-color: #FCE9DF;
-}
-
-.container-whygallery-bg {
-    padding-top: 5%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 5%;
-
-}
-
-
-
-.container-whygal-bg {
-    background-color: #000000;
-}
-
-.container-whygal-bg {
-    padding-top: 5%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 10%;
-}
-
-
-.bg-color-gal-container {
-    background-color: #CCB0A2;
-
-}
-
-.bg-color-gal-container {
-    padding-top: 5%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 2%;
-}
-
-.container-why-image {
-    background: url("../images/whygalbg.jpg") no-repeat center center;
-    background-size: 100%;
-    height: 100vh;
-
-}
-
-.bg-greet-grid {
-    background: url("../images/greet.jpg") no-repeat center center;
-    background-size: cover;
-    height: 450px;
-
-}
-
-
-.bg-greet-grid {
-    width: 400px;
-    height: 400px;
-    float: left;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #46433A;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-
-}
-
-
-
-.bgfun-grid {
-    background: url("../images/janfun.jpg") no-repeat center center;
-    background-size: cover;
-    height: 450px;
-
-}
-
-
-#janfun {
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-
-}
-
-
-.bgfun-grid {
-    width: 400px;
-    height: 400px;
-    float: right;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #46433A;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-
-}
-
-
-
-
-
-
-
-
-
-
-
--------------------------------------
-/* --------------------------------- Header and Colors */
-
-.bg-color-header {
-    /* background-color: #FCE9DF;  */
-    /* background-color: #24522E;  */
-
-}
-
-/* .ui-menu-color-form {
-    background-color:#F4ECE6;
-} */
-
-/* .ui-menu-color-button {
-    background-color:#854A14;
-    background-color: greenyellow;
-}   */
-
-
-
-/* --------------------------------- Title About Colors */
-
-
-/* .bg-color-name-title-frame {
-    /* background-color: #D9C8B7;  */
-    background-color: red;
-} */
-
-
-
-
-
-/* --------------------------------- Appoint Form Contact Tab Colors */
-
-.bg-color-contact-heading-container {
-    /* background-color: #EDE6DE; */
-    background-color: darkorange;
-
- }
-
-
- .bg-color-appoint {
-    /* background-color: #f3ECE4; */
-    background-color: darkseagreen;
- }
-
- xxxxxxxxxxxxxxx
- /*-------------------------------- Why Choose Section */
-
- .bg-color-why {
-    background-color: black;
-
- }
-
-.container-why {
-    background-color: #F4ECE6;
-} 
-
-
-
-.menuitem a {
-    width: 100%;
-    text-decoration: none;
-    color: #854A14;
-    height: 120px;
-    color: red;
-} 
-
-
-.button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #DBD4CC;
-    border-color: #4A3729;
-    background-color: rgba(98, 68, 4, 0.906);
-
-}  
-
-
-     
-
 
