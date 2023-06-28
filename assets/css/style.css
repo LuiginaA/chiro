@@ -529,6 +529,7 @@ div.logo {
 .treat-heading h2 {
     text-align: center;
     color:#4A3729;
+    color: #fb36f4;
     font-family: Merriweather, sans-serif;
     font-size: 28px; 
     font-weight: 600;
@@ -576,11 +577,11 @@ div.logo {
     top: 0;
     left: 0;
     border-radius: 20px 20px 0 0;  
-    opacity: .2;
+    opacity: 0.2;
 } 
 
 .treatment-card-1>.container-treat::after {
-    background-image: linear-gradient( 50deg, #0100ec, #fb36f4);
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
 } 
 
 .treatment-card-2>.container-treat::after {
@@ -615,7 +616,7 @@ div.logo {
     background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
 } 
 
-.button5  {
+.button5 {
     background-color: #1c1b29; 
     border: none;
 }
