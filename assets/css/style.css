@@ -146,14 +146,25 @@ div.logo {
     margin: 0;
 }
 
-.heading {
+.heading h3 {
     padding-top: 40px;
     text-align: center;
     font-style: italic;
+    text-align: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 20px 0 0;
+
+
 }
 
 .paragraph-quote {
     line-height: 2rem;
+    padding-bottom: 20px;
 }
 
 .bg-color-name-title {
@@ -164,6 +175,7 @@ div.logo {
     font-size: large;
     text-align: center;
     padding-top: 12px;
+
 }
 
 .list-inline-item:not(:last-child) {
@@ -460,17 +472,26 @@ div.logo {
 }
 
 #about-dr-janique h2 {
-    padding: 20px 0 0;
     text-align: center;
-    font-family: "Lato sans-serif";
-    font-size: 280%;
     color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 20px 0 0;
+
 }
 
-.about-headings  {
+.about-headings h4 {
     justify-content: center;
+    text-align: center;
     color:#4A3729;
-    line-height: 25px;
+    font-family: Merriweather, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.35rem;
     padding: 20px;
 }
 
@@ -497,11 +518,29 @@ div.logo {
 
 /* ---------------------------------Chiropractics Section */
 
+.container-treat-heading {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.treat-heading h2 {
+    text-align: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px; 
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+
 .cards-treat {
-    background-color: #151320;
-    background-color: #4A3729;
+    background-color: #fefefe;
     display: grid;
-    place-items: center center; 
+    place-items: center center;   
 }
 
 .treatment-card {
@@ -537,15 +576,15 @@ div.logo {
     top: 0;
     left: 0;
     border-radius: 20px 20px 0 0;  
-    opacity: 0.7;
+    opacity: .2;
 } 
 
 .treatment-card-1>.container-treat::after {
-    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
+    background-image: linear-gradient( 50deg, #0100ec, #fb36f4);
 } 
 
 .treatment-card-2>.container-treat::after {
-    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
 } 
 
 .treatment-card-3>.container-treat::after {
@@ -598,28 +637,31 @@ div.logo {
     color: #fefefe;
     font-family: 'Merriweather', serif; 
     font-weight: 600;
-    font-size: 27px;
+    font-size: 20px;
     font-style: italic;
+    letter-spacing: 1px;
 }  
 
 /* ---------------------------------House Rules Section */
 
 .container-house-rules {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;  
     min-height: 100vh;
     background-size: 100%; 
-    background-color: #D9C8B7;
-    background-color: blueviolet;
+    background-color: #4A3729;
+    /* background-color: #D9C8B7; */
+
 } 
 
-.container-house-rules{
+.container-rules{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: center;     
+    justify-content: center;
+    align-content: center;  
+    padding: 20px; 
+    grid-gap: 20px;  
 } 
 
 .card {
@@ -649,11 +691,12 @@ div.logo {
     background: linear-gradient(90deg,transparent,rgba(255,255,255,0.5));
     transform: rotate(35deg);
     pointer-events: none;
-    filter: blur(10px);
+    filter: blur(10px); 
+   
 }
 
 .card:nth-child(1) {
-    background: linear-gradient(to bottom #EADACB, #9A897A, #DDCDBE, #655244, #4A3729);
+    background: linear-gradient(to bottom #EADACB, #4A3729); 
 } 
 
 .rule-icon {
@@ -664,7 +707,7 @@ div.logo {
     background-color: #D9C8B7;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1), 
     inset 0 -8px 0 #fff;
     z-index: 1000;
     display: flex;
