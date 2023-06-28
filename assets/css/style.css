@@ -518,13 +518,13 @@ div.logo {
 
 /* ---------------------------------Chiropractics Section */
 
-.container-treat-heading {
+/* .container-treat-heading {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 .treat-heading h2 {
     text-align: center;
