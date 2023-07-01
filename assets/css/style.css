@@ -970,47 +970,15 @@ div.logo {
 
 .grid-container-treat {
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat (3, 1fr);  
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     max-width: 100%;
   }
   
-  .grid-container-treat {
-    font-family:'Merriweather', serif;
-    font-size: 16px; 
-    margin: 3rem;
-  }
-
 .card-treat img {
     display: block;
     max-width: 100%;
 } 
-
-/* .container-treat {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat (3, 1fr);  
-    max-width: 100%;
-  }
-   */
-  /* .container-why {
-    font-family:'Merriweather', serif;
-    font-size: 16px; 
-    margin: 3rem;
-  } */
-
-
-
-
-
-/* .container-treat-heading {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}  */
-
 
 .treat-heading h2 {
     text-align: center;
@@ -1023,15 +991,9 @@ div.logo {
     letter-spacing: 1px;
 }
 
-/* .grid-cards-treat {
-    background-color: #fefefe;
-    display: grid;
-    place-items: center center;   
-} */
-
 .treatment-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding-top: 20px;
     padding-bottom: 10px;
     grid-gap: 20px;  
@@ -1137,7 +1099,6 @@ div.logo {
     font-family: Merriweather, sans-serif;
     font-weight: 500;
     color: #4A3729;
-  
  }
 
 /* ---------------------------------House Rules Section */
