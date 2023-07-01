@@ -968,18 +968,20 @@ div.logo {
 
 /* ---------------------------------Chiropractics Section */
 
+
+.container-treat-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 .grid-container-treat {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     max-width: 100%;
-  }
+}
   
-.card-treat img {
-    display: block;
-    max-width: 100%;
-} 
-
 .treat-heading h2 {
     text-align: center;
     justify-content: center;
@@ -993,10 +995,10 @@ div.logo {
 
 .treatment-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding-top: 20px;
     padding-bottom: 10px;
-    grid-gap: 20px;  
+    grid-gap: 10px;  
 }
 
 .treat-card {
