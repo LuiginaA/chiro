@@ -981,10 +981,11 @@ div.logo {
     margin: 3rem;
   }
 
-/* .why-choose img {
+.card-treat img {
     display: block;
     max-width: 100%;
-} */
+} 
+
 /* .container-treat {
     display: grid;
     gap: 5px;
