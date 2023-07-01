@@ -968,19 +968,30 @@ div.logo {
 
 /* ---------------------------------Chiropractics Section */
 
-/* .container-treat {
+.grid-container-treat {
     display: grid;
-    margin: 0;
-}    */
+    gap: 10px;
+    grid-template-columns: repeat (3, 1fr);  
+    max-width: 100%;
+  }
+  
+  .grid-container-treat {
+    font-family:'Merriweather', serif;
+    font-size: 16px; 
+    margin: 3rem;
+  }
 
-
-.container-treat {
+/* .why-choose img {
+    display: block;
+    max-width: 100%;
+} */
+/* .container-treat {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat (3, 1fr);  
     max-width: 100%;
   }
-  
+   */
   /* .container-why {
     font-family:'Merriweather', serif;
     font-size: 16px; 
@@ -1011,11 +1022,11 @@ div.logo {
     letter-spacing: 1px;
 }
 
-.cards-treat {
+/* .grid-cards-treat {
     background-color: #fefefe;
     display: grid;
     place-items: center center;   
-}
+} */
 
 .treatment-card {
     display: grid;
