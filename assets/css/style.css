@@ -706,6 +706,12 @@ div.logo {
 
 /* ------------------------------Chiropractics Treatment Section */
 
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
 
 .container-treat-heading {
     display: flex;
@@ -1020,6 +1026,12 @@ div.logo {
 
 /* ------------------------------------------Testimonial Section */
 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container-testimonial-bx {
     display: flex;
     justify-content: center;
@@ -1154,6 +1166,13 @@ div.logo {
 }
 
 /* --------------------------Footer Section------------------------- */
+
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
 
 .container-footer {
     max-width: 1200px;
