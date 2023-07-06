@@ -8,11 +8,11 @@
 
 /* ---------------------------------Special paddings/margins/text */
 
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} 
 
 /* --------------------------------- Topnav Navbar Header Footer Button and Colors */
 
@@ -236,14 +236,16 @@ div.logo {
 #circle-container {
     width: 400px;
     height: 440px;
-    padding: 30px;
+    /* padding: 40px; */
+    padding: 10px;
     border-style: solid;
     border-color: #4A3729;
     border-width: 5px;
     border-radius: 35%;
     margin-top: 55px;
     margin-left: auto;
-    margin-right: 5px;
+    /* margin-right: 5px; */
+    margin-right: 15px;
     background-color: #FFF;
 }
 
@@ -358,6 +360,7 @@ div.logo {
     box-shadow: 
         0 1rem 0 black,
         0 0 0 1rem white;
+       
 }
 
 .medical-title::after {
@@ -706,11 +709,12 @@ div.logo {
 
 /* ------------------------------Chiropractics Treatment Section */
 
- * {
+.grid-container-treat * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 } 
+
 
 
 .container-treat-heading {
@@ -855,7 +859,7 @@ div.logo {
     align-items: center;  
     min-height: 100vh;
     background-size: 100%; 
-    background-color: #4A3729;
+    background: linear-gradient(45deg, #4A3729, #ffffff);
 }  
 
 .container-rules{
@@ -1026,12 +1030,6 @@ div.logo {
 
 /* ------------------------------------------Testimonial Section */
 
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container-testimonial-bx {
     display: flex;
     justify-content: center;
@@ -1185,7 +1183,7 @@ footer * {
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    background-color: #D9C8B7;
+    background-color: #EDE6DE;
 } 
 
 .brand {
@@ -1210,18 +1208,25 @@ footer * {
     display: inline-block;
     margin: 0.5em 0.5em 0.5em 0;
     padding-right: 20px;
+
+}
+
+.media-icons li i {
+   color: #4A3729;
+   font-size: 1em;
 }
 
 .media-icons a {
     font-size: 1.1em;
-    width: 2em;
-    height: 2em;
-    border: 1px #fefefe  solid;
+    width: 2.3em;
+    height: 2.3em;
+    border: 2px #4A3729 solid;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+ 
 }
 
 .media-icons a:hover {
@@ -1247,7 +1252,7 @@ footer ul {
 
 footer {
     color: #4A3729;
-    background: #D9C8B7;
+
 }
 
 footer p {
