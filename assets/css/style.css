@@ -708,14 +708,13 @@ div.logo {
 }
 
 
-/* ------------------------------Chiropractics Treatment Section */
+/* ------------------------------Chiropractics Treatment Section  - How Dr Janique Can Help You - */
 
 .grid-container-treat * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} 
-
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box; 
+}  
 
 
 .container-treat-heading {
@@ -726,9 +725,13 @@ div.logo {
 }
 .grid-container-treat {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: 100%;
+    /* grid-gap: 10px; */
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    max-width: 80%;
+grid-gap: 40px; 
+grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+margin: auto;
+
 }
   
 .treat-heading h2 {
@@ -740,6 +743,8 @@ div.logo {
     font-weight: 600;
     font-style: italic;
     letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .treatment-card {
@@ -817,19 +822,20 @@ div.logo {
 .button5 {
     background-color: #1c1b29; 
     border: none;
-}
+} 
 
-.button5 a {
+ .button5 a {
     text-align: center;
     text-decoration: none; 
     display: inline-block;
     margin: 4px 2px; 
     cursor: pointer;
-}
+} 
 
 .details {
     padding: 20px 10px;
     margin: 10px 0 25px 0;
+
 }     
 
 .details h3 {
@@ -850,6 +856,7 @@ div.logo {
     font-family: Merriweather, sans-serif;
     font-weight: 500;
     color: #4A3729;
+
  }
 
 /* ---------------------------------House Rules Section */
