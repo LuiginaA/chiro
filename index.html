@@ -27,6 +27,7 @@
 
     <header>
         <topnavbar class="topnav">
+            <div class="fixed-top">
             <ul class="justify-content-between bg-color-topnav row">
                 <li class="py-3 col-4">
                     <a class="active" href="#contact.html">
@@ -45,6 +46,7 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </topnavbar>
 
         <!-------------------- Navbar ----------------------->
@@ -76,17 +78,23 @@
 
                                         <li class="nav-item col-2">
                                             <i class="fa-sharp fa-solid fa-stethoscope" aria-hidden="true"></i>
-                                            <a class="nav-link" href="about.html">Meet Dr Janique!</a>
+                                            <a class="nav-link" href="#about">Meet Dr Janique!</a>
                                         </li>
 
                                         <li class="nav-item col-2">
                                             <i class="fas fa-user-doctor" aria-hidden="true"></i>
-                                            <a class="nav-link" href="forms.html"> Why Choose Dr Janique?</a>
+                                            <a class="nav-link" href="#whychoose">Why Choose Dr Janique?</a>
                                         </li>
 
-                                        <li class="nav-item dropdown col-2">
+                                        <li class="nav-item col-2">
+                                            <i class="fas fa-user-doctor" aria-hidden="true"></i>
+                                            <a class="nav-link" href="#treatments">Treatments!
+                                            </a>
+                                        </li>
+
+                                        <!-- <li class="nav-item dropdown col-2">
                                             <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
-                                            <a class="nav-link dropdown-toggle" href="conditions.html" role="button"
+                                            <a class="nav-link dropdown-toggle" href="#treatments" role="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">Treatments!
                                             </a>
 
@@ -170,16 +178,16 @@
                                                         Pain</a>
                                                 </li>
 
-                                            </ul>
-                                        </li>
+                                            </ul> -->
 
                                         <li class="nav-item col-2">
                                             <i class="fa-sharp fa-solid fa-folder-open" aria-hidden="true"></i>
-                                            <a class="nav-link" href="why.html">Patient Area!</a>
+                                            <a class="nav-link" href="#patient">Patient Area!</a>
                                         </li>
+                                        
                                         <li class="nav-item col-2">
                                             <i class="fas fa-phone" aria-hidden="true"></i>
-                                            <a class="nav-link" href="contact.html">Contact!</a>
+                                            <a class="nav-link" href="#contact">Contact!</a>
                                         </li>
                                     </ul>
 
@@ -191,7 +199,7 @@
                                             <div class="row">
                                                 <h2 class="name">Dr Janique Belli</h2>
                                                 <h5 class="details">Registered Chiropractor</h5>
-                                                <div class="footer-p">M.TECH. (CHIRO.) S.A. | MCASA | Registered
+                                                <div class="footer-p text-center">M.TECH. (CHIRO.) S.A. | MCASA | Registered
                                                     Chiropractor | Practice N° 0872458 | AHPCSA N° A12196
                                                 </div>
                                             </div>
@@ -214,14 +222,14 @@
                 <div class="col-5 heading">
                     <h3>Quote</h3>
 
-                    <div class="paragraph-quote">
-                        &#698;The sky has never been the limit. We are our own limits.
-                        It&#697;s
+                    <div class="paragraph-quote text-center">
+                        &ldquo;The sky has never been the limit. We are our own limits.
+                        It&rsquo;s
                         then about
                         breaking
                         our
                         personal limits and outgrowing ourselves to live our best
-                        lives&#698;. Author Unknown
+                        lives&rdquo;. - Author Unknown
                     </div>
                 </div>
             </div>
@@ -487,6 +495,12 @@
                                         How Dr Janique Can Help You!
                                     </h2>
                                 </div>
+                                <div class="quote-two">
+                                    <h5 class="heading">Quote</h5>
+                                    <h6>&ldquo;Chiropractic is a health profession specialising in the diagnosis, treatment and prevention of mechanical disorders of the <br>musculoskeletal system and the effects of these disorders
+                                    on the functioning of the nervous system and general health.&rdquo; - CASA
+                                </h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -527,10 +541,6 @@
                                             </div>
                                             <div class="modal-body content-why-treat">
                                                 <p>
-                                                    Chiropractics is a holistic approach in creating a healthy lifestyle
-                                                    for you.
-                                                </p>
-                                                <p>
                                                     Treatment is a safe, non-invasive and drug-free, holistic approach
                                                     to healing and prevention of pain assisting the body's ability to
                                                     heal itself.
@@ -566,7 +576,7 @@
                                             <button class="button button5" data-bs-toggle="modal"
                                                 data-bs-target="#twoModal">
                                                 <a href="#adjustments">
-                                                    <h3 class="details">Adjustments! </h3>
+                                                    <h3 class="details">Reason to see a Chiropractor! </h3>
                                                 </a>
                                             </button>
                                         </div>
@@ -683,8 +693,8 @@
                                         <div class="details">
                                             <button class="button button5" data-bs-toggle="modal"
                                                 data-bs-target="#fourModal">
-                                                <a href="#cupping">
-                                                    <h3 class="details">Cupping!</h3>
+                                                <a href="#">
+                                                    <h3 class="details">What does a Chiropractor do?</h3>
                                                 </a>
                                             </button>
                                         </div>
@@ -696,15 +706,16 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h4 class="modal-title fs-5 content-why-treat" id="fourModalLabel">
-                                                    Cupping!
+                                                    What Does a Chiropractor Do?
                                                 </h4>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body content-why-treat">
                                                 <p>
-                                                    CUPPING in creating a healthy lifestyle
-                                                    for you.
+                                                  
+                                                  
+                                                    
                                                 </p>
                                                 <p>
                                                     Treatment is a safe, non-invasive and drug-free, holistic approach
@@ -860,7 +871,7 @@
                                             <button class="button button5" data-bs-toggle="modal"
                                                 data-bs-target="#sevenModal">
                                                 <a href="#fktr">
-                                                    <h3 class="details">FKTR!</h3>
+                                                    <h3 class="details">What is an Adjustment</h3>
                                                 </a>
                                             </button>
                                         </div>
@@ -1302,33 +1313,33 @@
                                 </ul>
                             </div>
                             <div class="col2">
-                                <ul class="menu">
+                                <ul class="menu text-center">
                                     <li>
-                                        <a href="#">Home
+                                        <a href="#home">Home
 
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#">about
+                                        <a href="#about">about
 
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#">Contact
+                                        <a href="#faq">???
 
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#">Blog
+                                        <a href="#blog">???
 
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#">???
+                                        <a href="#contact">Contact
 
                                         </a>
                                     </li>
@@ -1336,12 +1347,12 @@
 
                                 </ul>
 
-                                <h6>
-                                    "When your bones are in place, a smile is upon your face.!"
-                                </h6>
+                                <h5>
+                                    "When your bones are in place, a smile is upon your face!"
+                                </h5>
                                 <h3>You Deserve This!</h3>
 
-                                <h2>The Chiro Wellness Center</h2>
+                                <h2 class="text-center">The Chiro Wellness Center</h2>
 
                             </div>
 
@@ -1352,10 +1363,12 @@
                                         <a class="active" href="#">
                                             <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
                                             <span><strong><em>Call or Text: +27 83 572 4444</em></strong></span>
+                                      
                                         </a>
+                                        <p class="py-2">Request an Appointment via Email</p>
                                     </li>
-                                    Request an Appointment
                                 </ul>
+                              
                                 <form>
                                     <div class="input-wrap">
                                         <input type="email" placeholder="example@gmail.com" />
@@ -1364,6 +1377,7 @@
                                         </button>
                                     </div>
                                 </form>
+                              
                                 <!-- <ul class="service-icons">
                                     <li>
                                         <a href="#">
