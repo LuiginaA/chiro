@@ -22,6 +22,15 @@
     background-color: #D9C8B7;
 }
 
+
+.fixed-top {
+    overflow: hidden;
+    position: fixed;
+    
+} 
+
+
+
 .topnav {
     padding-top: 2px;
     padding-bottom: 0px;
@@ -147,9 +156,7 @@ div.logo {
 }
 
 .heading h3 {
-    padding-top: 40px;
-    text-align: center;
-    font-style: italic;
+   
     text-align: center;
     color:#4A3729;
     font-family: Merriweather, sans-serif;
@@ -157,8 +164,9 @@ div.logo {
     font-weight: 600;
     font-style: italic;
     letter-spacing: 1px;
-    padding: 20px 0 0;
-
+    padding-top: 40px; 
+    /* padding: 20px 0 0;  */
+    padding-bottom: 20px;
 
 }
 
@@ -747,6 +755,42 @@ margin: auto;
     margin-bottom: 20px;
 }
 
+.quote-two h5 {
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 10px 0 0;
+
+
+}
+
+.quote-two h6 {
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 10px 0 0;
+   
+
+}
+
+.quote-two {
+    line-height: 2rem;
+    padding-bottom: 20px;
+}
+
+
+
+
 .treatment-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -1171,6 +1215,120 @@ margin: auto;
     font-weight: 500
 }
 
+
+/* --------------------------Chiro Infor Section------------------------- */
+
+.chiro-info-heading {
+    margin-top: 0px;
+}
+
+.chiro-info-heading h3 {
+    text-align: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 40px; 
+    padding-bottom: 20px;
+}
+
+.chiro-info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    color: #fefefe; 
+}
+
+.chiro-info-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;  
+}
+
+.chiro-info-card {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.7);  
+
+}
+
+.chiro-info-card .imgbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+}
+
+.chiro-info-card .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    transition: 0.5s;  
+}
+
+.chiro-info-card .chiro-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background: #4A3729;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}  
+
+.chiro-info-card:hover .chiro-content {
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+} 
+
+.chiro-content p {
+    font-size: 15px;
+    color: #EADACB;
+    margin: 10px 0 0;
+    padding: 1em 1em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+}
+
+.chiro-info-card:hover .chiro-content p {
+    transform: translateY(0);
+    opacity: 1;
+} 
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #EADACB;
+} 
+
+.chiro-info-card:hover {
+    box-shadow: 0 0 5em rgba(0,0,0,0.4);
+} 
+
+
 /* --------------------------Footer Section------------------------- */
 
 footer * {
@@ -1189,7 +1347,7 @@ footer * {
 .container-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     gap: 2em;
     background-color: #EDE6DE;
 } 
@@ -1198,7 +1356,6 @@ footer * {
     display: block;
     font-size: 1.8em;
     font-weight: 500; 
-    margin-bottom: 1em;
     align-content: center;   
 }
 
@@ -1210,11 +1367,9 @@ footer * {
     height: 230px;
 }
 
-/* .service-icons li,  */
-
 .media-icons li{
-    display: inline-block;
-    margin: 0.5em 0.5em 0.5em 0;
+    display: inline-block; 
+    margin: 0.5em 0.5em 0.5em 0; 
     padding-right: 20px;
 
 }
@@ -1222,6 +1377,7 @@ footer * {
 .media-icons li i {
    color: #4A3729;
    font-size: 1em;
+  
 }
 
 .media-icons a {
@@ -1238,30 +1394,22 @@ footer * {
 }
 
 .media-icons a:hover {
-    background: #fefefe;
     color: #111;
+    background-color: #212529;   
+    background: rgba(255,255,255,0.8); 
+    border-radius: 4%; 
+    padding: 10px;
 }
-
-/* .service-icons a {
-    font-size: 1.6em;
-
-} */
-
-
-/* .service-icons a:hover {
-
-    color: #dbdbdb;
-    
-    } */
 
 footer ul {  
     list-style: none;
+ 
 }
 
 footer {
     color: #4A3729;
 
-}
+} 
 
 footer p {
     color: #4A3729;
@@ -1277,8 +1425,9 @@ footer a {
 }
 
 footer h3 {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     text-align: center;
+   
 }
 
 footer h4 {
@@ -1286,20 +1435,24 @@ footer h4 {
     text-align: center;
 }
 
-/* h1 {
-    color: #2bdce3;
+footer h5 {
+    margin-bottom: 1em;
     text-align: center;
-    margin: 3em 0;
-    font-size: 3em;
-} */
+}
+
+footer h2 {
+    margin-top: 2em;
+    text-align: center;
+}
 
 footer .menu {
     margin-bottom: 3rem;
+
 }
 
 footer .menu li {
     display: inline-block;
-    margin: 0 0.7em 0.7em 0;
+    margin: 0 0.7em 0.7em 0; 
     text-align: center;
 }
 
@@ -1309,7 +1462,12 @@ footer .menu a {
 }
 
 footer .menu a:hover {
-color: #fefefe;
+    color: #111; 
+    background-color: #212529;  
+    background: rgba(255,255,255,0.8); 
+    border-radius: 40%; 
+    padding: 10px;
+
 }
 
 .footer-bottom {
@@ -1325,38 +1483,252 @@ color: #fefefe;
 }
 
 
-/* .input-wrap {
+.input-wrap {
 margin: 1em 0;
 display: flex;
-} */
+} 
 
-/* 
 .input-wrap input {
     padding: 0.5em;
     border: none;
-    background: #20232a;
-    color: #ccc;
+    background: #dbdbdb; 
+    color: #4A3729;
+ 
 }
-
-
 
 .input-wrap input:focus {
     outline: none;
+    
 }
 
 
 .input-wrap button {
     padding: 0.8em;
-    background: #ff2b00;
+    background: #D9C8B7;
     border: none;
-    color: #fff;
+    color: #4A3729;
 }
 
 
 .input-wrap button:hover {
-    background: #fff;
-    color: #111;
-} */
+    background: #D9C8B7;
+    color: #4A3729;
+} 
+
+/* ---------------------------------------------- */
+
+
+ /*-------------------------------- Gallery Why Section */
+
+ .container-whygallery-bg {
+    background-color: #FCE9DF;
+}
+
+.container-whygallery-bg {
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+
+}
+
+
+
+.container-whygal-bg {
+    background-color: #000000;
+}
+
+.container-whygal-bg {
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10%;
+}
+
+
+.bg-color-gal-container {
+    background-color: #CCB0A2;
+  
+
+}
+
+.bg-color-gal-container {
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 2%; 
+    /* padding-bottom: 470px; */
+
+}
+
+.container-why-image {
+    background: url("../images/whygalbg.jpg") no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+
+}
+
+.bg-greet-grid {
+    background: url("../images/greet.jpg") no-repeat center center;
+    background-size: cover;
+    height: 450px;
+
+}
+
+
+.bg-greet-grid {
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #46433A;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+  
+}
+
+
+
+.bgfun-grid {
+    background: url("../images/janfun.jpg") no-repeat center center;
+    background-size: cover;
+    height: 450px;
+
+}
+
+
+#janfun {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+
+}
+
+
+.bgfun-grid {
+    width: 400px;
+    height: 400px;
+    float: right;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #46433A;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+
+}
+
+
+
+.container-chiro {
+    size: cover;
+    min-height: 120vh;
+    width: cover;
+    background-color: #000;
+}
+
+.container-chiro h4 {
+    padding-top: 50px; 
+    margin-top: 150px;
+    text-align: center;
+    font-size: 28px;
+    font-family: Merriweather, sans-serif;
+    font-weight: 400;
+    color: #EDE6DE;
+ }  
+
+ .container-chiro h5 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Merriweather, sans-serif;
+    font-weight: 500;
+    color: #EDE6DE;
+    
+ }  
+
+
+ .container-chiro h2 {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Merriweather, sans-serif;
+    font-weight: 500;
+    color: #EDE6DE;
+   
+
+} 
+
+.container-chiro h6 {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Merriweather, sans-serif;
+    font-weight: 500;
+    color: #FCE9DF;
+    color: blueviolet;
+ }
+
+/* .container-chiro {
+    color: #FCE9DF;
+    color: red;
+}   */
+
+
+.container-chiro p {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    color: #FCE9DF;
+
+ } 
+
+ 
+  .grid-container {
+    display: grid;
+    height: 400px;
+    align-content: space-around;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    /* background-color: #2196F3; */
+    padding: 30px;
+  }
+
+    
+  .grid-container > div h6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 10px;
+    color: red;
+  }
+  
+  .grid-container > div p {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 10px;
+    color: #000;
+  }
+
+
+/* ---------------------------------------------- */
+
+
+
+
+
+
+
+
+
 
 
 @media  screen and (max-width: 900px) {
