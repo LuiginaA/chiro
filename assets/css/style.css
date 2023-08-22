@@ -18,18 +18,15 @@
 
 /* ------------------ Topnav */
 
+
 .bg-color-topnav {
     background-color: #D9C8B7;
 }
 
-
 .fixed-top {
     overflow: hidden;
-    position: fixed;
-    
+    position: fixed;   
 } 
-
-
 
 .topnav {
     padding-top: 2px;
@@ -49,7 +46,9 @@
     text-decoration: none;
 }
 
+
 /* ------------------ Navbar */
+
 
 .inner-bg-color {
     background-color: #EDE6DE;
@@ -156,7 +155,6 @@ div.logo {
 }
 
 .heading h3 {
-   
     text-align: center;
     color:#4A3729;
     font-family: Merriweather, sans-serif;
@@ -165,9 +163,7 @@ div.logo {
     font-style: italic;
     letter-spacing: 1px;
     padding-top: 40px; 
-    /* padding: 20px 0 0;  */
     padding-bottom: 20px;
-
 }
 
 .paragraph-quote {
@@ -183,7 +179,6 @@ div.logo {
     font-size: large;
     text-align: center;
     padding-top: 12px;
-
 }
 
 .list-inline-item:not(:last-child) {
@@ -192,6 +187,7 @@ div.logo {
 
 
 /* ---------------------------------About Dr Janique Section */
+
 
 .container-flex-about {
     display: flex;
@@ -226,7 +222,6 @@ div.logo {
     font-style: italic;
     letter-spacing: 1px;
     padding: 20px 0 0;
-
 }
 
 .about-headings h4 {
@@ -244,7 +239,6 @@ div.logo {
 #circle-container {
     width: 450px;
     height: 440px;
-    /* padding: 40px;  */
     padding: 10px;
     border-style: solid;
     border-color: #4A3729;
@@ -255,7 +249,6 @@ div.logo {
     margin-right: auto;
     background-color: #fff;
     background-color: #FEFEFE;
-  
 }
 
 #circle-cover-bg {
@@ -265,7 +258,9 @@ div.logo {
     border-radius: 35%;
 }
 
+
 /* ---------------------------------Why Choose Dr Janique Section */
+
 
 .why-heading h2 {
     color:#4A3729;
@@ -286,27 +281,31 @@ div.logo {
     text-align: center;
 }
 
+
 /* ---------------------------------Why Choose Dr Janique Reason Section */
+
 
 .grid-container-why {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat (4, 1fr);  
     max-width: 100%;
-  }
+}
   
-  .grid-container-why {
+.grid-container-why {
     font-family:'Merriweather', serif;
     font-size: 16px; 
     margin: 3rem;
-  }
+}
 
 .why-choose img {
     display: block;
     max-width: 100%;
 }
 
+
 /* ---------------------------------Medical Column */
+
 
 .medical-info {
     --_br: 1rem;
@@ -368,8 +367,7 @@ div.logo {
     border-radius: var(--_br) var(--_br) 0 0;
     box-shadow: 
         0 1rem 0 black,
-        0 0 0 1rem white;
-       
+        0 0 0 1rem white;      
 }
 
 .medical-title::after {
@@ -409,7 +407,9 @@ div.logo {
     list-style-type: none;
 }
 
+
 /* ---------------------------------Drug Column */
+
 
 .drug-info {
     --_br: 1rem;
@@ -511,7 +511,9 @@ div.logo {
     list-style-type: none;
 }
 
+
 /* ---------------------------------Surgery Column */
+
 
 .surgery-info {
     --_br: 1rem;
@@ -613,7 +615,9 @@ div.logo {
     list-style-type: none;
 }
 
+
 /* ---------------------------------Safe Column */
+
 
 .safe-info {
     --_br: 1rem;
@@ -716,30 +720,25 @@ div.logo {
 }
 
 
-/* ------------------------------Chiropractics Treatment Section  - How Dr Janique Can Help You - */
+/* ------------------------------Chiropractics Treatment Section  -*/
+
 
 .grid-container-treat * {
-    /* padding: 0;
-    margin: 0; */
     box-sizing: border-box; 
 }  
-
 
 .container-treat-heading {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
+
 .grid-container-treat {
     display: grid;
-    /* grid-gap: 10px; */
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     max-width: 80%;
-grid-gap: 40px; 
-grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
-margin: auto;
-
+    grid-gap: 40px; 
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+    margin: auto;
 }
   
 .treat-heading h2 {
@@ -765,8 +764,6 @@ margin: auto;
     letter-spacing: 1px;
     line-height: 30px;
     padding: 10px 0 0;
-
-
 }
 
 .quote-two h6 {
@@ -779,17 +776,12 @@ margin: auto;
     letter-spacing: 1px;
     line-height: 30px;
     padding: 10px 0 0;
-   
-
 }
 
 .quote-two {
     line-height: 2rem;
     padding-bottom: 20px;
 }
-
-
-
 
 .treatment-card {
     display: grid;
@@ -879,7 +871,6 @@ margin: auto;
 .details {
     padding: 20px 10px;
     margin: 10px 0 25px 0;
-
 }     
 
 .details h3 {
@@ -900,10 +891,11 @@ margin: auto;
     font-family: Merriweather, sans-serif;
     font-weight: 500;
     color: #4A3729;
-
  }
 
+
 /* ---------------------------------House Rules Section */
+
 
 .container-house-rules {
     display: flex;
@@ -1022,7 +1014,9 @@ margin: auto;
     line-height: 1.5em;
 }
 
+
 /* --------------------------------------Appointment info Section */
+
 
 .container-appoint {
     margin: 0px;
@@ -1081,6 +1075,7 @@ margin: auto;
 
 
 /* ------------------------------------------Testimonial Section */
+
 
 .container-testimonial-bx {
     display: flex;
@@ -1158,8 +1153,7 @@ margin: auto;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  
+    object-fit: cover; 
 } 
 
 .container-testimonial .card-testimonial .icon i span {
@@ -1218,6 +1212,7 @@ margin: auto;
 
 /* --------------------------Chiro Infor Section------------------------- */
 
+
 .chiro-info-heading {
     margin-top: 0px;
 }
@@ -1230,8 +1225,21 @@ margin: auto;
     font-weight: 600;
     font-style: italic;
     letter-spacing: 1px;
-    padding-top: 40px; 
-    padding-bottom: 20px;
+    padding-top: 28px; 
+    margin-bottom: 30px;
+  }
+
+.chiro-info-heading h2 {
+    text-align: center;
+    justify-content: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 32px; 
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .chiro-info {
@@ -1251,7 +1259,7 @@ margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 50px;  
+    padding-bottom: 50px;    
 }
 
 .chiro-info-card {
@@ -1260,7 +1268,6 @@ margin: auto;
     height: 600px;
     transition: 0.3s ease-out;
     box-shadow: 0 3px 15px rgba(0,0,0,0.7);  
-
 }
 
 .chiro-info-card .imgbox {
@@ -1329,7 +1336,185 @@ h2 {
 } 
 
 
+/* --------------------------Conditions Section------------------------- */
+
+
+.condition-info-heading {
+    margin-top: 0px;
+}
+
+.condition-info-heading h3 {
+    text-align: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    /* padding-top: 30px;  */
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.condition-info-heading h3 span {
+    color: #111;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.condition-info-heading h2 {
+    text-align: center;
+    justify-content: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 32px; 
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+    padding-top: 30px;
+}
+
+.condition-info-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px; 
+    margin-bottom: 30px;
+    background: #111111; 
+}  
+
+.container-condition-fluid {
+    position: relative; 
+    width: 1200px;
+    height: 600px;
+    background: #fefefe;
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-condition .conbox {
+    position: relative;
+    width: 400px;
+    height: 485px; 
+    background: #111111;
+    border-radius: 20px;
+    float: left;
+    /* width: calc(300px -30px);
+    height: calc(300px -30px); */
+    margin: 15px;
+    overflow: hidden; 
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+
+.container-condition .conbox:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleX(0);
+    opacity: 0;
+    z-index: 1;
+} 
+
+.container-condition .conbox:hover:before {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.container-condition .conbox:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+} 
+
+.container-condition .conbox:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.container-condition .conbox .imgconbox {
+    position: relative; 
+}
+
+.container-condition .conbox .imgconbox img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container-condition .conbox:hover .imgconbox img {
+    transform: scale(1.2);
+    opacity: .2;
+}
+
+.container-condition .conbox .detail-contents {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-condition .conbox .detail-contents h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fefefe;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container-condition .conbox .detail-contents p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #fefefe;
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.container-condition .conbox:hover .detail-contents h2,
+.container-condition .conbox:hover .detail-contents p
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+
 /* --------------------------Footer Section------------------------- */
+
 
 footer * {
     box-sizing: border-box;
@@ -1339,17 +1524,23 @@ footer * {
 }
 
 .container-footer {
-    max-width: 1200px;
+    /* max-width: 1200px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 1em; */
+
+    width: 100%;
+    padding: 20px;
 }
 
 .container-footer {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between; 
-    gap: 2em;
+    align-content: center;
+    justify-content: space-evenly;  
     background-color: #EDE6DE;
+    margin: 0px;
 } 
 
 .brand {
@@ -1440,9 +1631,11 @@ footer h5 {
     text-align: center;
 }
 
-footer h2 {
+footer h1 {
     margin-top: 2em;
     text-align: center;
+    color: #111;
+    font-size: 1.8em;
 }
 
 footer .menu {
@@ -1516,6 +1709,7 @@ display: flex;
 } 
 
 /* ---------------------------------------------- */
+
 
 
  /*-------------------------------- Gallery Why Section */
@@ -1717,6 +1911,11 @@ display: flex;
     font-size: 10px;
     color: #000;
   }
+
+
+
+
+
 
 
 /* ---------------------------------------------- */
