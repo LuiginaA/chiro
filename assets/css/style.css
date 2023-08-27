@@ -1513,6 +1513,385 @@ h2 {
 }
 
 
+/* ---------------------------------F-A-Q Section */
+
+
+
+
+/* ---------------------------------Contact Us Section */
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: nowrap; 
+}
+
+.contactUs {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-con {
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 40%, hsla(30, 31%, 78%, 1) 40%);
+}
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px; 
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUs .title  h2 {
+    color:#fefefe;
+    color: #4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 40px; 
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+    padding-top: 30px;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.mapBox {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: #fefefe;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+.contactBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr; 
+    grid-template-areas: 
+    "form info" 
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3 {
+    text-align: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+/* -------------- Form Box ------ */
+
+
+.contactFormBox {
+    position: relative;
+    width: 100%;
+}
+
+.contactFormBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.contactFormBox .row100 .contact-inputBox {
+    width: 100%;
+}
+
+.contact-inputBox span {
+    color: #4A3729;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}
+
+.contact-inputBox input {
+    padding: 10px;
+    font-size: 1.1em; 
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.contact-inputBox textarea {
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact-inputBox input[type="submit"] {
+    background: #111;
+    color: #FEFEFE;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    max-width: 120px;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.contact-inputBox ::placeholder {
+    color: #999999;
+} 
+
+
+/* -------------- Contact Info Box ------ */
+
+
+.info {
+    background: #000;
+}
+
+.info h3 {
+    color: #fefefe;
+}
+
+.info .infoBoxContact div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBoxContact div span{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-width: 40px;
+    height: 40px;
+    color: #fefefe;
+    font-size: 1.5em;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.info .infoBoxContact div p {
+    color: #fefefe;
+    font-size: 1.1em;
+}
+
+.info .infoBoxContact div a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 1.1em; 
+}
+
+.mediaIcons {
+    margin-top: 40px;
+    display: flex;
+}
+
+.mediaIcons li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.mediaIcons li a {
+    color: #fefefe;
+    font-size: 2em;
+    color: #ccc;   
+}
+
+.mediaIcons a:hover {
+    color: #EDE6DE;   
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+} 
+
+
+/* ---------------------------------Clinico Section */
+
+
+/* .clinico-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.clinico {
+       box-sizing: border-box;
+}
+
+.con-clinico {
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 40%, hsla(30, 31%, 78%, 1) 40%);
+} */
+
+/* .clinico {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+} */
+
+/* .clinico .book-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+/* 
+.clinico .book-title  h2 {
+    color:#fefefe;
+    font-family: Merriweather, sans-serif;
+    font-size: 40px; 
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+    padding-top: 30px;
+} */
+
+/* -------------- Clinico Box ----- */
+
+/* .clinicoBox {
+    padding: 40px;
+    background: #fefefe;
+    color: #2bdce3;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+} */
+
+/* .clinico-appoint {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 5fr 4fr;   
+    grid-template-areas: 
+    "clinicoBox clinicoAppBox"
+    margin-top: 20px;
+} */
+
+/* .clinicoAppBox
+{
+    grid-area: appoint;
+}   */
+
+/* .clinico-box h3{
+    text-align: center;
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+} */
+
+/* .clinicoBox {
+    padding: 0;
+}
+
+.clinicoAppBox  {
+    position: relative;
+
+}  */
+
+/*  
+.clinicoAppBox iframe {
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* -------------- Media Queries----- */
+
+
+@media (max-width: 991px)
+{
+    contact-container
+    {
+        background: #EDE6DE;
+    }
+    .contactUs
+    {
+        padding: 20px;
+    }
+    .contactBox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-area: 
+        "form"
+        "Info"
+        "map";
+    }
+    .contactformBox .row50
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .contact-inputBox {
+        width: 100%;
+    }
+    .contact
+    {
+        padding: 30px;
+    } 
+    .map 
+    {
+        min-height: 300px;
+        padding: 0; 
+    }
+
+}
+
+
+/* -------------- Fun Image Box ----- */
+
+
+/* .contact-imgFun  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-imgFun img {
+        height: 350px;
+        width: 300px;
+        justify-items: center;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+} */
+
+
+
 /* --------------------------Footer Section------------------------- */
 
 
@@ -1713,7 +2092,7 @@ display: flex;
 
 
  /*-------------------------------- Gallery Why Section */
-
+/* 
  .container-whygallery-bg {
     background-color: #FCE9DF;
 }
@@ -1753,41 +2132,45 @@ display: flex;
     padding-bottom: 2%; 
     /* padding-bottom: 470px; */
 
-}
+} */
 
-.container-why-image {
+/* .container-why-image {
     background: url("../images/whygalbg.jpg") no-repeat center center;
     background-size: 100%;
     height: 100vh;
 
-}
+} */
 
-.bg-greet-grid {
+/* .bg-greet-grid {
     background: url("../images/greet.jpg") no-repeat center center;
     background-size: cover;
-    height: 450px;
-
-}
-
-
-.bg-greet-grid {
-    width: 400px;
-    height: 400px;
+    height: 300px;
     float: left;
+
+} */
+
+/* 
+.bg-greet-grid {
+    width: 100px;
+    height: 350px;
+    margin-top: 50px;
     border-style: solid;
     border-width: 3px;
     border-color: #46433A;
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
   
-}
+} */
 
 
 
-.bgfun-grid {
-    background: url("../images/janfun.jpg") no-repeat center center;
+.contact .fun-image  .image{
+    background: url("assets/images/janfun.jpg") no-repeat center center;
     background-size: cover;
     height: 450px;
+    width: 350px;
+    margin-top: 400px;
+    padding-left: 50px;
 
 }
 
@@ -1801,9 +2184,9 @@ display: flex;
 }
 
 
-.bgfun-grid {
-    width: 400px;
-    height: 400px;
+.contact .fun-image  .image{
+    width: 350px;
+    height: 300px;
     float: right;
     border-style: solid;
     border-width: 3px;
@@ -1815,14 +2198,14 @@ display: flex;
 
 
 
-.container-chiro {
+/* .container-chiro {
     size: cover;
     min-height: 120vh;
     width: cover;
     background-color: #000;
-}
+} */
 
-.container-chiro h4 {
+/* .container-chiro h4 {
     padding-top: 50px; 
     margin-top: 150px;
     text-align: center;
@@ -1830,9 +2213,9 @@ display: flex;
     font-family: Merriweather, sans-serif;
     font-weight: 400;
     color: #EDE6DE;
- }  
+ }   */
 
- .container-chiro h5 {
+ /* .container-chiro h5 {
     margin-top: 16px;
     margin-bottom: 16px;
     text-align: center;
@@ -1841,10 +2224,10 @@ display: flex;
     font-weight: 500;
     color: #EDE6DE;
     
- }  
+ }   */
 
 
- .container-chiro h2 {
+ /* .container-chiro h2 {
     margin-top: 18px;
     margin-bottom: 15px;
     text-align: center;
@@ -1854,9 +2237,9 @@ display: flex;
     color: #EDE6DE;
    
 
-} 
+}  */
 
-.container-chiro h6 {
+/* .container-chiro h6 {
     margin-top: 2px;
     margin-bottom: 4px;
     text-align: center;
@@ -1865,7 +2248,7 @@ display: flex;
     font-weight: 500;
     color: #FCE9DF;
     color: blueviolet;
- }
+ } */
 
 /* .container-chiro {
     color: #FCE9DF;
@@ -1873,7 +2256,7 @@ display: flex;
 }   */
 
 
-.container-chiro p {
+/* .container-chiro p {
     margin-top: 2px;
     margin-bottom: 4px;
     text-align: left;
@@ -1882,10 +2265,10 @@ display: flex;
     font-weight: 500;
     color: #FCE9DF;
 
- } 
+ }  */
 
  
-  .grid-container {
+  /* .grid-container {
     display: grid;
     height: 400px;
     align-content: space-around;
@@ -1893,9 +2276,9 @@ display: flex;
     gap: 30px;
     /* background-color: #2196F3; */
     padding: 30px;
-  }
+  } */
 
-    
+/*     
   .grid-container > div h6 {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -1903,14 +2286,14 @@ display: flex;
     font-size: 10px;
     color: red;
   }
-  
-  .grid-container > div p {
+   */
+  /* .grid-container > div p {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 10px;
     color: #000;
-  }
+  } */
 
 
 
@@ -1921,285 +2304,12 @@ display: flex;
 /* ---------------------------------------------- */
 
 
-
-
-
-
-
-
-
-
-
 @media  screen and (max-width: 900px) {
     .footer2 .container
     flex-direction: column;
 }
 
 
-
-/* 
-/* ------------------ Footer */
-/* 
-.bg-color-footer {
-    background-color: #EDE6DE;
-}
-
-.footer-frame {
-    border-style: solid;
-    border-width: 33px;
-    border-color: #D9C8B7;
-}
-
-#bg-footer-outerframe {
-    border-style: solid;
-    border-width: 35px;
-    border-color: #fefefe;
-}
-
-#bg-footer-innerframe {
-    border-style: solid;
-    border-width: 20px;
-    border-color: #4A3729;
-}
-
-#address, #email, #contact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-} */
-/* 
-.footer-top i {
-    color: #4A3729;
-    font-size: 16px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-    margin-top: 8px;
-}
-
-.footer-heading {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        justify-content: center;
-        align-items: center;
-        margin-left: 52px;
-}
-
-.footer-logo {
-    background: url("../images/footerlogo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 250px;
-    margin-top: 8px;
-    margin-left: 55px;
-}
-
-.footer-section-name {
-    font-family: Merriweather, sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    color: #4A3729;
-    margin-top: 5px;
-}
-
-.footer-p {
-    font-size: 12px;
-    font-weight: 500;
-    text-align: center;
-    color: #000;
-    padding-top: 3px;
-    padding-bottom: 8px;
-}
-
-.footer-section-heading {
-    font-family: Merriweather, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    font-style: italic;
-    color: #4A3729;
-    padding-bottom: 5px;
-} */
-/* 
-.footer-bottom-heading {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.footer-bottom {
-    font-family: Merriweather, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    font-style: bold;
-    color: #4A3729;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.footer-bottom-heading li {
-  list-style-type: none;
-  text-align: center;
-  margin-right: 50px;
-  line-height: .70rem;
-}
-
-#quick-links,
-#download-link,
-#clinico {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #4A3729;
-}
-
-#social {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: right;
-    padding-right: 60px;
-    color: #4A3729;
-}
-
-.foot-item-link a::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-} */
-/* 
-.foot-item-link p {
-    font-family: Merriweather, sans-serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 600;
-    color: #4A3729;
-    width: 100%;
-    line-height: .75rem;
-}
-
-.inline-block {
-    font-family: Merriweather, sans-serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    color: #4A3729;
-    width: 100%;
-    line-height: 1.5rem;
-}
-
-.inline-block-book {
-    font-family: Merriweather, sans-serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 600;
-    color: #4A3729;
-    width: 100%;
-}
-
-.list-inline {
-    list-style-type: none;
-}
-
-.foot-item-link p {
-    font-size: 14px;
-    text-align: center;
-    color: #4A3729;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    /* transition: all 0.3s ease; */
-}
-
-/* .foot-item-link p:hover {
-    background-color: #4A3729;
-    padding-left: 10px;
-    padding-top: 5px;
-    margin-left: 20px;
-    color: #fefefe;
-    height: 18px;
-}
-
-.foot-item-link ul li:not(:last-child) {
-    margin-bottom: 10px;
-} */ */
-/* 
-.download i
-.calendar i {
-    font-size: 18px;
-    color: #4A3729;
-    text-align: center;
-    padding-left: 5px;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.social-links i {
-    font-size: 18px;
-    color: #4A3729;
-    text-align: center;
-    padding-left: 5px;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.download i,
-.calendar i {
-    width: 28px;
-    height: 28px;
-    padding: 5px 0;
-    border-radius: 50%;
-    font-size: 15px;
-    line-height: 1rem;
-    text-align: center;
-    align-content: space-between;
-    color: #fefefe;
-    background: #4A3729;
-}
-
-.social-links li a i {
-    width: 28px;
-    height: 28px;
-    padding: 5px 0;
-    border-radius: 50%;
-    font-size: 15px;
-    line-height: 1rem;
-    text-align: center;
-    align-content: space-between;
-    color: #fefefe;
-    background: #4A3729;
-}
-
-.download i:hover {
-    color: #4A3729;
-    background: #D9C8B7;
-}
-
-.calendar i:hover {
-    color: #4A3729;
-    background: #D9C8B7;
-}
-
-.social-links li a i:hover {
-    color: #4A3729;
-    background: #D9C8B7;
-} */ 
 
 
 @media screen and (max-width: 1393px) {
