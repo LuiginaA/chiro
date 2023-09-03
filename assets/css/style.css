@@ -1515,7 +1515,78 @@ h2 {
 
 /* ---------------------------------F-A-Q Section */
 
+.container-md-faq {
+    background: #000; 
+    padding: 0;
+    margin: 50px;
+}
 
+.faq-heading h3 {
+    text-align: center;
+    color: #EDE6DE; 
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 30px; 
+    margin-bottom: 30px;
+}
+
+.faq-heading h2 {
+    text-align: center;
+    justify-content: center;
+    color:#EDE6DE;
+    font-family: Merriweather, sans-serif;
+    font-size: 32px; 
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    width: 750px;
+    height: 100%;
+    margin-left: 40px;
+    padding-left: 20px;
+}
+
+.accordion-container {
+    width: 100%; 
+    max-width: 80rem; 
+    margin: 0 auto; 
+    padding: 0 25px;
+}
+
+.accordion {
+    background: #fefefe; 
+    padding: 25px;
+    justify-content: space-between;  
+} 
+
+.accordion-item {
+    background-color: #EADACB;  
+    border-radius: 25px;
+    margin-bottom: 15px;
+    padding: 1rem;
+    border-color: #4A3729;
+}
+
+#btn-accord {
+    color: #000; 
+    background-color: #fefefe;
+    box-shadow: none;   
+}
+   
+.accordion-body p {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding: 2rem;  
+}
 
 
 /* ---------------------------------Contact Us Section */
