@@ -169,7 +169,23 @@ div.logo {
 .paragraph-quote {
     line-height: 2rem;
     padding-bottom: 20px;
-}
+   
+} 
+
+.paragraph-quote {
+    color:#4A3729;
+    font-family: Merriweather, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px
+} 
+
+
 
 .bg-color-name-title {
     background-color: #EDE6DE;
@@ -278,6 +294,7 @@ div.logo {
     padding-top: 10px;
     font-family:'Merriweather', serif;
     font-size: 18px; 
+    font-style: italic;
     text-align: center;
 }
 
@@ -285,11 +302,15 @@ div.logo {
 /* ---------------------------------Why Choose Dr Janique Reason Section */
 
 
+
+
+
 .grid-container-why {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat (4, 1fr);  
     max-width: 100%;
+   
 }
   
 .grid-container-why {
@@ -298,9 +319,11 @@ div.logo {
     margin: 3rem;
 }
 
-.why-choose img {
+.why-choose-img {
     display: block;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -725,21 +748,31 @@ div.logo {
 
 .grid-container-treat * {
     box-sizing: border-box; 
+    margin: 0; 
 }  
 
 .container-treat-heading {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+} 
+
+.cont-grid-treat{
+    background-color: #151320;
+    height: 80vh;  
+    display: grid;
+    place-items: center center;
+    grid-gap: 40px;
 }
 
 .grid-container-treat {
     display: grid;
-    max-width: 80%;
-    grid-gap: 40px; 
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+    max-width: 100%;
+    grid-gap: 40px;  
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: auto;
-}
+    border-radius: 20px;
+}    
   
 .treat-heading h2 {
     text-align: center;
@@ -758,7 +791,7 @@ div.logo {
     color:#4A3729;
     font-family: Merriweather, sans-serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
@@ -775,21 +808,17 @@ div.logo {
     text-align: center;
     letter-spacing: 1px;
     line-height: 30px;
-    padding: 10px 0 0;
-}
+    padding-top: 10px;
+    padding-bottom: 30px
+} 
 
-.quote-two {
-    line-height: 2rem;
-    padding-bottom: 20px;
-}
-
-.treatment-card {
+.treat-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 20px;
     padding-bottom: 10px;
-    grid-gap: 10px;  
-}
+    border-radius: 20px; 
+}  
 
 .treat-card {
     background-color: #1c1b29;
@@ -799,16 +828,16 @@ div.logo {
 
 .container-treat {
     position: relative;
-    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);  
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);  
 }
 
 .card-treat img {
     width: 100%;
     display: block;
-    border-radius: 20px 20px 0 0; 
+    border-radius: 20px 20px 0 0;
 }  
    
-.container-treat::after {
+.container-treat:after {
     content: '';
     height: 100%;
     width: 100%;
@@ -819,44 +848,45 @@ div.logo {
     opacity: 0.2;
 } 
 
-.treatment-card-1>.container-treat::after {
+.treatment-card-1>.container-treat:after {
     background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
 } 
 
-.treatment-card-2>.container-treat::after {
+.treatment-card-2>.container-treat:after {
     background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
 }  
 
-.treatment-card-3>.container-treat::after {
+.treatment-card-3>.container-treat:after {
     background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
 } 
 
-.treatment-card-4>.container-treat::after {
+.treatment-card-4>.container-treat:after {
     background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
 } 
 
-.treatment-card-5>.container-treat::after {
+.treatment-card-5>.container-treat:after {
     background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
 }   
 
-.treatment-card-6>.container-treat::after {
+.treatment-card-6>.container-treat:after {
     background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
 }  
 
-.treatment-card-7>.container-treat::after {
+.treatment-card-7>.container-treat:after {
     background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
 } 
  
-.treatment-card-8>.container-treat::after {
+.treatment-card-8>.container-treat:after {
     background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
 }  
 
-.treatment-card-9>.container-treat::after {
+.treatment-card-9>.container-treat:after {
     background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
-} 
+}  
 
 .button5 {
     background-color: #1c1b29; 
+    border-radius: 20px,20px 0 0;
     border: none;
 } 
 
@@ -866,36 +896,37 @@ div.logo {
     display: inline-block;
     margin: 4px 2px; 
     cursor: pointer;
-} 
-
-.details {
-    padding: 20px 10px;
-    margin: 10px 0 25px 0;
-}     
+}  
 
 .details h3 {
     color: #fefefe;
-    font-family: 'Merriweather', serif; 
+    /* font-family: 'Merriweather', serif;  */
+    font-family: 'Lato', sans-serif; 
     font-weight: 600;
     font-size: 16px;
     font-style: italic;
     letter-spacing: 1px;
+    margin: 10px 0 15px 0;
 }  
+
+.modal-content {
+    margin-left: 50%;
+    margin-top: 20px;
+}
 
 .content-why-treat p {
     margin-top: 2px;
     margin-bottom: 4px;
     text-align: left;
-    line-height: 1.5rem;
-    font-size: 12px;
-    font-family: Merriweather, sans-serif;
-    font-weight: 500;
+    line-height: 1.5rem; 
+    font-size: 14px;
+    /* font-family: Merriweather, sans-serif;  */
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600;
     color: #4A3729;
  }
 
-
 /* ---------------------------------House Rules Section */
-
 
 .container-house-rules {
     display: flex;
