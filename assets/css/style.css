@@ -301,10 +301,6 @@ div.logo {
 
 /* ---------------------------------Why Choose Dr Janique Reason Section */
 
-
-
-
-
 .grid-container-why {
     display: grid;
     gap: 5px;
@@ -759,7 +755,7 @@ div.logo {
 
 .cont-grid-treat{
     background-color: #151320;
-    height: 80vh;  
+    height: 50vh;  
     display: grid;
     place-items: center center;
     grid-gap: 40px;
@@ -1112,7 +1108,7 @@ div.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; 
     background: linear-gradient(45deg, #4A3729, #ffffff);
 }
 
